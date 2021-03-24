@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
 
-var divStyle = {
-  
-};
+const styleObj = {
+   fontSize: 14,
+   color: "#4a54f1",
+   textAlign: "left",
+   paddingTop: "100px",
+}
 
 class table extends React.Component {
     constructor(props) {
@@ -40,8 +43,8 @@ class table extends React.Component {
  
     render() {
        return (
-          <div style={divStyle}>
-             <h1 id='title' className=" " > User Details</h1>
+          <div >
+             <h1 id='title' style={styleObj} > User Details</h1>
              <table id='students'  className="myAwesomeTable">
                 <tbody>
                    <tr>{this.renderTableHeader()}</tr>
